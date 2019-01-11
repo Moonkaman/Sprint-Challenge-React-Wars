@@ -7,11 +7,21 @@
 .starwars-char-cont {
   /* border: 1px solid gray; */
   box-shadow: 0 0 5px rgb(155, 155, 155);
+  top: 0px;
+  position: relative;
   margin: 5px 5px 5px 5px;
   padding: 10px 20px;
   border-radius: 6px;
   width: 30%;
-  max-width: 300px;;
+  max-width: 300px;
+  transition: box-shadow 0.2s ease, top 0.2s ease;
+  cursor: pointer;
+}
+
+.starwars-char-cont:hover {
+  box-shadow: 0 0 15px rgb(155, 155, 155);
+  top: 10px;
+  z-index: 2;
 }
 
 .date-added {
@@ -46,6 +56,10 @@
   border-bottom: 1px solid black;
   font-size: 16px;
   padding: 6px 0;
+}
+
+.last-block {
+  border-bottom: none;
 }
 
 .info-block p {

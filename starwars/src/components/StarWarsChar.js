@@ -16,7 +16,7 @@ const StarWarsChar = props => {
         <StarWarsCharInfoBlock blockText='Hair Color:' charData={props.char.hair_color} />
         <StarWarsCharInfoBlock blockText='Eye Color:' charData={props.char.eye_color} />
         <StarWarsCharInfoBlock blockText='Skin Color:' charData={props.char.skin_color} />
-        <StarWarsCharInfoBlock blockText='Mass:' charData={props.char.mass} />
+        <StarWarsCharInfoBlock blockText='Mass:' charData={props.char.mass} lastBlock={true}/>
       </div>
     </div>
   )

@@ -32,6 +32,7 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.starwarsChars)
     return (
       <div className="App">
         <StarWarsCharList starwarsChars={this.state.starwarsChars} />

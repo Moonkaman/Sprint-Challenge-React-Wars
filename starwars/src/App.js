@@ -12,7 +12,7 @@ class App extends Component {
     super();
     this.state = {
       //Use this to switch between api data and dummyData
-      goOffline: true,
+      goOffline: false,
       starwarsChars: [],
       offlinestarwarsChars: dummyData,
       searchBarInput: '',
@@ -22,6 +22,7 @@ class App extends Component {
 
   componentDidMount() {
     if(!this.state.goOffline){
+      console.log('hey')
       this.getCharacters('https://swapi.co/api/people');
     }
     this.setState({
@@ -38,7 +39,7 @@ class App extends Component {
         return res.json();
       })
       .then(data => {
-        this.setState({ starwarsChars: data.results });
+        this.setState({ starwarsChars: data.results, filteredStarwarsChars: data.results });
       })
       .catch(err => {
         throw new Error(err);
@@ -71,6 +72,7 @@ class App extends Component {
   render() {
     // Used this to get dummy data from api
     //console.log(JSON.stringify(this.state.starwarsChars))
+    console.log(this.state.starwarsChars);
       return (
         <div className="App">
           <SearchBar searchBarInput={this.state.searchBarInput} handleInput={this.handleInput}/>

@@ -71,17 +71,12 @@ class App extends Component {
   render() {
     // Used this to get dummy data from api
     //console.log(JSON.stringify(this.state.starwarsChars))
-
-    if(this.state.filteredStarwarsChars.length === 0){
-      return <h1>Loading...</h1>
-    } else {
       return (
         <div className="App">
           <SearchBar searchBarInput={this.state.searchBarInput} handleInput={this.handleInput}/>
           <StarWarsCharList starwarsChars={this.state.filteredStarwarsChars} />
         </div>
       );
-    }
   }
 }
 

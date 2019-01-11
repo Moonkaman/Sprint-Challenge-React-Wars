@@ -34,6 +34,12 @@
   justify-content: center; 
 }
 
+.no-results {
+  color: lightgray;
+  font-weight: normal;
+  font-size: 45px;
+}
+
 .starwars-char-cont {
   /* border: 1px solid gray; */
   box-shadow: 0 0 5px rgb(155, 155, 155);
@@ -46,6 +52,7 @@
   max-width: 300px;
   transition: box-shadow 0.2s ease, top 0.2s ease;
   cursor: pointer;
+  background: white;
 }
 
 .starwars-char-cont:hover {

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
+
 const SearchBar = props => {
   return (
     <form className="nav-bar">
@@ -10,6 +12,7 @@ const SearchBar = props => {
       value={props.searchBarInput}
       onChange={props.handleInput} 
       />
+      <button><i class="fas fa-search"></i></button>
     </form>
   )
 }

@@ -5,16 +5,31 @@
 }
 
 .starwars-char-cont {
-  background: blue;
+  /* border: 1px solid gray; */
+  box-shadow: 0 0 5px rgb(155, 155, 155);
   margin: 5px 5px 5px 5px;
   padding: 10px;
   border-radius: 6px;
+  width: 30%;
+  max-width: 300px;;
+}
+
+.starwars-char-icon {
+  background: #64B5F6;
+  color: white;
+  font-size: 54px;
+  padding: 16px 20px; 
+  border-radius: 100px;
 }
 
 .starwars-char-name {
   margin: 0px;
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .starwars-char-born {
   margin: 0px;
+  font-weight: normal;
 }

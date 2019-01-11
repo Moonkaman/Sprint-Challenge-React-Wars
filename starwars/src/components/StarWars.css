@@ -50,7 +50,7 @@
 
 .starwars-char-cont:hover {
   box-shadow: 0 0 15px rgb(155, 155, 155);
-  top: 10px;
+  top: -10px;
   z-index: 2;
 }
 

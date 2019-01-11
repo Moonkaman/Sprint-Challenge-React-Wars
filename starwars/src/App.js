@@ -22,7 +22,6 @@ class App extends Component {
 
   componentDidMount() {
     if(!this.state.goOffline){
-      console.log('hey')
       this.getCharacters('https://swapi.co/api/people');
     }
     this.setState({
@@ -72,7 +71,6 @@ class App extends Component {
   render() {
     // Used this to get dummy data from api
     //console.log(JSON.stringify(this.state.starwarsChars))
-    console.log(this.state.starwarsChars);
       return (
         <div className="App">
           <SearchBar searchBarInput={this.state.searchBarInput} handleInput={this.handleInput}/>

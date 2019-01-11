@@ -6,6 +6,7 @@ import '../../node_modules/@fortawesome/fontawesome-free/css/all.css'
 const StarWarsChar = props => {
   return (
     <div className="starwars-char-cont">
+      <p className="date-added">Created on {props.char.created}</p>
       <i className="fas fa-user starwars-char-icon"></i>
       <h2 className="starwars-char-name">{props.char.name}</h2>
       <div className="info-cont">

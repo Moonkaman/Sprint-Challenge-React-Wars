@@ -8,18 +8,19 @@
   /* border: 1px solid gray; */
   box-shadow: 0 0 5px rgb(155, 155, 155);
   margin: 5px 5px 5px 5px;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 6px;
   width: 30%;
   max-width: 300px;;
 }
 
 .starwars-char-icon {
-  background: #64B5F6;
+  background: #90CAF9;
   color: white;
-  font-size: 54px;
-  padding: 16px 20px; 
+  font-size: 124px;
+  padding: 32px 40px; 
   border-radius: 100px;
+  margin-top: 40px;
 }
 
 .starwars-char-name {
@@ -29,7 +30,13 @@
   margin-top: 20px;
 }
 
-.starwars-char-born {
-  margin: 0px;
-  font-weight: normal;
+.info-cont {
+  margin-top: 20px;
+}
+
+.info-block {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  font-size: 16px;
 }

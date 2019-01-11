@@ -34,7 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <StarWarsCharList />>
+        <StarWarsCharList starwarsChars={this.state.starwarsChars} />
       </div>
     );
   }

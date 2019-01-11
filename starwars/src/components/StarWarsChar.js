@@ -10,6 +10,7 @@ const StarWarsChar = props => {
       <i className="fas fa-user starwars-char-icon"></i>
       <h2 className="starwars-char-name">{props.char.name}</h2>
       <div className="info-cont">
+        {/* Add all of the relavent information to the bottom of the card by creating infoblock components and passing the props it needs  */}
         <StarWarsCharInfoBlock blockText='Gender:' charData={props.char.gender} />
         <StarWarsCharInfoBlock blockText='Born:' charData={props.char.birth_year} />
         <StarWarsCharInfoBlock blockText='Height:' charData={props.char.height} />

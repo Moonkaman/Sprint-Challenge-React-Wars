@@ -45,22 +45,25 @@ class App extends Component {
       });
   };
 
+  //Controlled input method
   handleInput = e => {
     this.setState({
       [e.target.name]: e.target.value
     }, _ => {
+        //Filter the list of characters using the setstate callback function and the filterCharacters method
         this.filterCharacters();
     });
   }
 
   filterCharacters() {
+    //Depending on the goOffline state set the filteredStarWarsChars array using filter on this.state.offlinestarwarsChars or starwars
     if(this.state.goOffline) {
       this.setState({
         filteredStarwarsChars: this.state.offlinestarwarsChars.filter(char => char.name.toLowerCase().includes(this.state.searchBarInput.toLowerCase()))
       })
     } else {
       this.setState({
-        starwarsChars: this.state.offlinestarwarsChars.filter(char => char.name.toLowerCase().includes(this.state.searchBarInput.toLowerCase()))
+        filteredStarwarsChars: this.state.starwarsChars.filter(char => char.name.toLowerCase().includes(this.state.searchBarInput.toLowerCase()))
       })
     }
   }
